@@ -24,8 +24,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./blog-preview-card-main/assets/images/screenshot_mobile.jpeg)
-![Screenshot](https://raw.githubusercontent.com/uptowngirl757/blog_preview_card/main/assets/images/screenshot_mobile.jpeg)
+![Screenshot](./blog-preview-card-main/design/desktop-design.jpg)
+
+<!-- ![Screenshot](https://raw.githubusercontent.com/uptowngirl757/blog_preview_card/main/assets/images/screenshot_mobile.jpeg) -->
 
 ### Links
 
