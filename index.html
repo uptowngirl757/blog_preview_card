@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- displays site properly based on user's device -->
 
     <link
@@ -15,12 +21,77 @@
     <title>Frontend Mentor | Blog preview card</title>
 
     <style>
+      body {
+        background-color: hsl(47, 88%, 63%);
+        font-family: "Figtree", sans-serif;
+      }
+      .container {
+        width: 100%;
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+        max-width: 375px;
+        margin: 100px auto 100px auto;
+        padding: 1.2rem;
+        border-radius: 15px;
+        border: 1px solid #000;
+        box-shadow: 8px 8px 0px 5px hsl(0, 0%, 7%);
+        /* ask how to split max-width and width styles using the .container and .content wisely without causing layout issues and times when we need to split the max-width and margin in order not to cause margin problems */
+      }
+      .main-img {
+        width: 100%;
+        border-radius: 15px;
+      }
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        color: hsl(0, 0%, 7%);
+        margin: 1.1rem 0;
+        font-weight: 900;
+        background-color: hsl(47, 88%, 63%);
+        padding: 0.7rem 1.1rem;
+        border-radius: 9px;
+        transition: letter-spacing 0.2s ease;
+      }
+      .btn:hover {
+        letter-spacing: 1px;
+      }
+      .date {
+        display: block;
+        color: hsl(0, 0%, 7%);
+      }
+      h1 a {
+        text-decoration: none;
+        color: hsl(0, 0%, 7%);
+        transition: color 0.3s ease-out;
+      }
+      h1 a:hover {
+        color: hsl(47, 88%, 63%);
+      }
+      p.content {
+        color: hsl(0, 0%, 42%);
+        line-height: 1.6;
+      }
+      .user-info img {
+        vertical-align: middle;
+      }
+      .user-info span {
+        font-weight: 700;
+        margin-left: 1rem;
+      }
       .attribution {
+        margin-bottom: 20px;
         font-size: 11px;
         text-align: center;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
+      }
+      .attribution a:hover {
+        text-decoration: none;
       }
     </style>
   </head>
@@ -29,29 +100,31 @@
       <img
         src="./blog-preview-card-main/assets/images/illustration-article.svg"
         alt=""
+        class="main-img"
       />
-      <a href="#" class="btn">Learning</a>
+      <div class="text-content">
+        <a href="#" class="btn">Learning</a>
 
-      <span class="date">Published 21 Dec 2023 </span>
-      <h1><a href="#">HTML & CSS foundations</a></h1>
-      <p class="content">
-        These languages are the backbone of every website, defining structure,
-        content, and presentation.
-      </p>
-      <div class="user-info">
-        <img
-          src="./blog-preview-card-main/assets/images/image-avatar.webp"
-          alt=""
-        />
-        <span>Greg Hooper</span>
+        <span class="date">Published 21 Dec 2023 </span>
+        <h1><a href="#">HTML & CSS foundations</a></h1>
+        <p class="content">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+        <div class="user-info">
+          <img
+            src="./blog-preview-card-main/assets/images/image-avatar.webp"
+            alt=""
+          />
+          <span>Greg Hooper</span>
+        </div>
       </div>
-
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Happiness Olukayode</a>.
-      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Happiness Olukayode</a>.
     </div>
   </body>
 </html>
