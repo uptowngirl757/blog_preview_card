@@ -24,7 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./blog-preview-card-main/assets/images/screenshot_mobile.jpeg)
+![Screenshot](./blog-preview-card-main/assets/images/screenshot_mobile.jpeg)
+![Screenshot](https://raw.githubusercontent.com/uptowngirl757/blog_preview_card/main/assets/images/screenshot_mobile.jpeg)
 
 ### Links
 
@@ -41,7 +42,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned how t align text on same line by wrapping them in a container so they look left-aligned without much stress and also aligning text and imgs using the vertical-align property
+I learned how to align text on same line by wrapping them in a container so they look left-aligned without much stress and also aligning text and imgs using the vertical-align property
 
 ```css
 .user-info img {
